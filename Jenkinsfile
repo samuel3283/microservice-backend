@@ -15,12 +15,12 @@ script{
 //bat "docker rm -f container-repobackend"
 //bat "docker image rm -f repobackend"
 //bat "docker rmi repobackend"
-sh "sudo docker build -t repobackend ."
+sh "docker build -t repobackend ."
 }
 }
 stage('Iniciando Docker ') {
 script{
-sh "sudo docker run -d --name container-repobackend -p 8089:8089 repobackend"
+sh "docker run -d --name container-repobackend -p 8089:8089 repobackend"
 }
 }
 }
