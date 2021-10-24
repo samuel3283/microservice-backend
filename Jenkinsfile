@@ -1,5 +1,5 @@
 #!groovy?
-def GIT_COMMIT_SHORT = "
+def GIT_COMMIT_SHORT = ""
 
 node {
 deleteDir()
