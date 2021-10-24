@@ -30,7 +30,7 @@ sh "docker build -t repobackend:${GIT_COMMIT_SHORT} ."
 }
 stage('Iniciando Docker ') {
 script{
-sh "docker run -d --name container-repobackend -p 8085:8085 repobackend:${GIT_COMMIT_SHORT}"
+sh "docker run -d -p 8085:8085 repobackend:${GIT_COMMIT_SHORT}"
 }
 }
 }
